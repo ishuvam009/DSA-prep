@@ -4,23 +4,21 @@
 using namespace std;
 
 int main(){
-
 	int n;
 	cin >> n;
+	int fact = 0;
 
-	int dupli = n;
-	int sum = 0;
-
-	while(n>0){
-		int lstDgt = n%10;
-		sum = (lstDgt*lstDgt*lstDgt) + sum;
-		n = n/10;
+	for(int i=1;i<=n;i++){
+		
+		if(n%i==0){
+			fact = fact+1;
+		}
 	}
 
-	if(dupli == sum){
-		cout << "Its an armstring number." << endl;
+	if(fact==2){
+		cout << "Its a natural number.";
 	}else{
-		cout << "Its not an armstring number." << endl;
+		cout << "Its not a natural number";
 	}
 
 	return 0;
