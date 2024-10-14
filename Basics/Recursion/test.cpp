@@ -1,13 +1,13 @@
-//Sum from 1 to N (Function).
+// 1 to N Factorial.
 
 #include<iostream>
 using namespace std;
 
-int funnc(int n){
+int factt(int n){
 	if(n==0){
-		return n;
+		return 1;
 	}else{
-		return n+funnc(n-1);
+		return n*factt(n-1);
 	}
 }
 
@@ -15,6 +15,7 @@ int main(){
 
 	int n;
 	cin >> n;
-	cout << funnc(n);
+	cout << factt(n);
+
 	return 0;
 }
