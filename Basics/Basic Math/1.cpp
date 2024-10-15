@@ -3,23 +3,17 @@
 #include<iostream>
 using namespace std;
 
+void printFive(int n,int i){
+	// if(n>i) return;
+	// cout << "Shuvam" << endl;
+	// printFive(n);
+	cout << n << endl;
+	cout << i << endl;
+}
+
 int main(){
 	int n;
 	cin >> n;
-	int fact = 0;
-
-	for(int i=1;i<=n;i++){
-		
-		if(n%i==0){
-			fact = fact+1;
-		}
-	}
-
-	if(fact==2){
-		cout << "Its a natural number.";
-	}else{
-		cout << "Its not a natural number";
-	}
-
+	printFive(n,1);
 	return 0;
 }
