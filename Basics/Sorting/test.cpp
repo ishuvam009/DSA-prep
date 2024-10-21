@@ -1,13 +1,20 @@
 #include<iostream>
 using namespace std;
 
+void swaps(int arr, int n){
+	
+	for(int i=0;i<n-1;i++){
+		for(){
+			
+		}
+	}
+}
+
 int main(){
 	int n;
 	cin >> n;
-	cout << "1st N: " << n << endl;
-	int b = n++;
-	cout << "2nd N: " << n << endl;
-	cout << "B: " << b << endl;
-	// cout << "2nd B: " << b << endl;
+	int arr[n];
+	for(int i=0;i<n;i++) cin >> arr[i];
+	swaps(arr,n);
 	return 0;
 }
