@@ -14,11 +14,6 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
-    cout << endl;
-}
 
 int main() {
     int n;
@@ -27,12 +22,13 @@ int main() {
     for(int i=0;i<n;i++) cin >> arr[i];
     int m = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Original array: ";
-    printArray(arr, m);
+    cout << "Or: ";
+    for(int i=0;i<n;i++) cout <<arr[i] << " ";
 
     insertionSort(arr, m);
 
-    cout << "Sorted array: ";
-    printArray(arr, m);
+    cout << endl << "Mo: ";
+
+    for(int i=0;i<n;i++) cout << arr[i] << " "; 
     return 0;
 }
