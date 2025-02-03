@@ -35,5 +35,11 @@ int main(){
 
     //Delete an element.
 
+    cout << "\n" << "Delete an element. (400)" << endl;
+    t1.erase(t1.begin());  // the first element will be deleted.
+    for(auto it = t1.begin();it != t1.end();it++){
+        cout << *(it) << " " ;
+    }
+
     return 0;
 }
